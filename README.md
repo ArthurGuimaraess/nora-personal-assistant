@@ -33,6 +33,29 @@ The project is being designed with people who may experience:
 
 These groups are an important part of the product's intended audience, not a claim that NORA diagnoses or treats any condition. The goal is supportive daily functionality — not clinical intervention.
 
+## A look at the NORA experience
+
+The interface is designed to feel calm, approachable and flexible — with clear navigation, small-step planning and user-controlled assistant actions.
+
+<p align="center">
+  <img src="docs/images/nora-desktop-preview.svg" alt="Illustrative NORA desktop dashboard preview" width="100%" />
+</p>
+
+<table>
+  <tr>
+    <td width="38%" valign="top">
+      <img src="docs/images/nora-mobile-preview.svg" alt="Illustrative NORA mobile dashboard preview" width="100%" />
+      <p align="center"><sub>Mobile experience</sub></p>
+    </td>
+    <td width="62%" valign="top">
+      <img src="docs/images/nora-assistant-preview.svg" alt="Illustrative NORA assistant with a user-confirmed planning proposal" width="100%" />
+      <p align="center"><sub>Assistant proposal with explicit confirmation</sub></p>
+    </td>
+  </tr>
+</table>
+
+<sub>These are illustrative vector previews recreated from the project's interface references to make the product easier to explore. They are not live screenshots, a release build, or evidence of clinical validation. See the project documentation for implemented features and known limitations.</sub>
+
 ## What supportive design means in NORA
 
 NORA's product direction is guided by a few principles:
