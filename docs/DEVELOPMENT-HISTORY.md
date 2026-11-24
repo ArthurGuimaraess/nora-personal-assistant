@@ -1,17 +1,17 @@
-# NORA — Selected development history
+# NORA public repository — Development history
 
-This is a condensed history of the engineering work represented by the archived versions and reports. Version labels refer to development packages, not public store releases.
+This page records the evolution of this public repository only. It is not a complete history of the private NORA application.
 
-| Stage | Main product and engineering focus |
+## Public repository milestones
+
+| Stage | Public repository change |
 |---|---|
-| Early versions | Core organizer, routines, reminders and initial Gemini-supported assistant experiments |
-| 0.8–1.x | Adaptive routines, languages, sleep/travel and focus support; accessibility and optional medicine-search utilities |
-| 2.x | More structured assistant flows, explicit permissions, user-owned preferences/memory and planning proposals requiring confirmation |
-| 3.0–3.6 | Mobile/Android WebView prototype, navigation and menu refinements, desktop/mobile integration, time-zone handling and connectivity work |
-| 3.7–4.0 | Offline consultation and protected-copy work, password unlock, synchronization and duplicate-prevention tests, Android/PC interaction |
-| 4.1–4.2.2 | Offline UX, protected history/status, accessibility refinements and validation of account separation and synchronization behavior |
-| 4.3 | Incremental API usage controller for Gemini/SerpAPI with internal counters, local thresholds, cache and pause control |
+| Repository setup | Created the public repository and established its project description |
+| Demo publication | Added a reduced FastAPI and SQLite demonstration with a small browser interface |
+| Quality checks | Added automated tests that use a temporary database and a GitHub Actions workflow |
+| Documentation | Added public-facing documentation for purpose, limitations, architecture and safe use |
+| Visual previews | Added illustrative vector previews to help explain the product direction |
 
-Across those iterations, the product direction has remained centered on accessible daily support: helping people organize routines, focus, rest and ask for support in ways that can be adapted to their needs.
+The public repository was assembled as a safe, limited example that can be inspected and run locally. It intentionally does not contain the complete private application or a detailed implementation history of private product components.
 
-The project evolved through repeated implementation, debugging, user-flow testing and revision. The public repository intentionally exposes selected, safe artifacts instead of the complete private application.
+Version labels, internal release packages and development notes from the private application are not represented here.

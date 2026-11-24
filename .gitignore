@@ -1,13 +1,29 @@
+# Python
 __pycache__/
 *.py[cod]
 .pytest_cache/
 .venv/
 venv/
+
+# Local runtime data
 instance/
+data/
+backups/
+logs/
 *.sqlite
+*.sqlite3
 *.db
+
+# Local secrets and certificates
 .env
 .env.*
 !.env.example
+secrets/
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Operating system
 .DS_Store
 Thumbs.db

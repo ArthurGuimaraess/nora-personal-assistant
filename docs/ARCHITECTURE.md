@@ -1,41 +1,32 @@
-# NORA — Architecture overview
+# NORA public demo — Architecture
 
-## System shape
+This document describes only the software included in this repository. It is not a specification of the private NORA application.
 
-The reviewed NORA application follows a client/server structure:
+## Components
 
-- **Frontend:** browser-based interface built with JavaScript, HTML and CSS, with responsive behavior for desktop and mobile.
-- **Backend:** Python/FastAPI application exposing REST endpoints and validating input and permissions.
-- **Persistence:** SQLite database for account-scoped application records and application state.
-- **Android:** Java application with a WebView that loads the NORA web experience from a configured server. The Python backend is not bundled as an Android runtime.
-- **External services:** Gemini and SerpAPI are optional integrations. Credentials belong in server-side environment configuration, never in browser JavaScript or a public repository.
+- **Frontend:** a small browser interface built with HTML, CSS and JavaScript.
+- **Backend:** a FastAPI application that serves the interface and exposes a small REST API.
+- **Local persistence:** SQLite stores the demo task records on the machine running the demo.
+- **Tests:** Pytest and FastAPI's test client exercise API behavior using a temporary database.
+- **Continuous integration:** GitHub Actions installs the development dependencies and runs the test suite.
 
-## Feature modules and responsibility boundaries
+## Request flow
 
-The source audit identified modular backend features, modular browser features, a main application entry point, a dedicated test suite, Android source, deployment examples and backup tools.
+1. A person opens the local interface in a browser.
+2. The JavaScript client sends requests to the local FastAPI server.
+3. The server validates task input and performs parameterized SQLite operations.
+4. The browser refreshes the task list and daily overview.
 
-The AI tool flow uses server-defined operations. A model can propose an action, but a proposal is validated and must be reviewed/confirmed by the user before it is committed. The model is not given direct SQL access or private session tokens.
+## Local data
 
-## Offline data flow
+By default, the SQLite file is created under the ignored `instance/` directory. Tests override the database path with a temporary file so they do not write to a developer's normal demo database.
 
-The offline work evolved around three separate concepts:
+## Deliberate limitations
 
-1. A protected local copy for consultation.
-2. A local queue for changes created while disconnected.
-3. Synchronization history/status for understanding what happened.
+The demo has no login, authorization, external AI or search service, remote synchronization, multi-user support, production deployment configuration or account-level data separation. It is intended to run on the local machine, bound to `127.0.0.1`.
 
-The implementation notes describe password-based unlocking, account ownership checks, duplicate-prevention/idempotency and synchronization after reconnecting. These paths have automated development tests, but they still require validation against the final deployed server and physical devices.
+Do not expose this demo to the internet or use it to store real personal, account, health or medication information.
 
-## API usage controller (4.3 iteration)
+## Private product boundary
 
-The 4.3 incremental update adds a central controller for Gemini and SerpAPI attempts. It counts calls in SQLite before the provider request, applies internal per-user/day and global/month thresholds, caches SerpAPI results in memory for a short period per account, and exposes an authenticated usage panel. A global switch can pause external requests.
-
-These controls are local application safeguards. They do not know the provider's actual account balance or guarantee a maximum currency spend. Provider-side quota and billing configuration remains necessary.
-
-## Inclusive product direction
-
-The architecture serves a product intended to be adaptable to different energy, attention, sleep, sensory and routine needs. Supportive UX should stay separate from clinical decision-making. AI suggestions require consent and user confirmation; sensitive information must not be shared by default.
-
-## Public demo boundary
-
-The demo is a deliberately reduced standalone sample. It has its own SQLite database, no login, no external APIs and only task organization/focus-timer flows. It is not the full NORA backend and should remain local-only.
+The complete NORA application and its internal architecture are outside this repository. This document intentionally describes only the code that a reviewer can inspect here.

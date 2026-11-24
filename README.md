@@ -1,193 +1,134 @@
-<div align="center">
-
 # ✳ NORA
 
 ### A gentler digital companion for everyday life
 
-**Mental well-being · Neurodiversity · Sleep · Accessibility · Personal organization**
+**Mental well-being · Neurodiversity · Sleep · Accessibility · Everyday routines**
 
-**Project owner & developer: Arthur Guimarães**
+**Created and maintained by Arthur Guimarães**
 
-NORA is being shaped around people who need everyday support that adapts to their energy, attention, routines and individual needs — including people living with depression, anxiety, ADHD, OCD, insomnia and other mental-health, neurodevelopmental or sleep-related challenges.
+NORA is a project exploring calmer, more accessible ways to approach everyday tasks and routines. Its long-term product direction is informed by the experiences of people living with depression, anxiety, ADHD, OCD, insomnia and many other challenges — as well as anyone who benefits from flexible, supportive tools.
 
-[Why NORA exists](docs/CARE-AND-INCLUSION.md) · [Explore features](docs/FEATURES.md) · [Architecture](docs/ARCHITECTURE.md) · [Run the local demo](#-try-the-public-demo)
+This repository is a **small, self-contained public demonstration**, not the complete NORA application. It is shared so people can explore a limited example, review the code, run the tests and contribute to this public slice.
 
-</div>
+<p align="center">
+  <img src="docs/images/nora-desktop-preview.svg" alt="Illustrative NORA desktop interface preview" width="100%" />
+</p>
+
+<p align="center">
+  <img src="docs/images/nora-mobile-preview.svg" alt="Illustrative NORA mobile interface preview" width="38%" />
+  <img src="docs/images/nora-assistant-preview.svg" alt="Illustrative NORA assistant preview" width="58%" />
+</p>
+
+<sub>These are illustrative vector concepts, not screenshots of a released application or evidence that the pictured features are implemented. The public demo below is substantially smaller.</sub>
 
 ---
 
 ## Why NORA exists
 
-Everyday tasks that look simple from the outside can require a great deal of energy, attention, planning or emotional effort. Keeping appointments, starting a task, organizing a routine, changing plans after a difficult day, focusing, winding down for sleep or asking for help can become overwhelming.
+Everyday tasks can require more energy, attention or planning than they appear to from the outside. A disrupted routine, a long to-do list or an overwhelming day can make it difficult to decide where to begin.
 
-**NORA's central purpose is to make those everyday moments more manageable, more accessible and less judgmental.** It brings practical organization and supportive tools into one adaptable space, so people can approach their day in a way that respects their own pace.
+NORA's guiding idea is to make everyday digital support more adaptable and less judgmental: small steps instead of pressure, flexible routines instead of rigid streaks, clear interactions instead of unnecessary complexity, and user choice instead of hidden automation.
 
-The project is being designed with people who may experience:
+The project is intended to be shaped responsibly around different needs. It is **not** a medical device, therapist, diagnostic system or emergency service. The current public demo does not implement condition-specific mental-health or sleep support and has not been clinically evaluated.
 
-- **Depression and low-energy periods:** when getting started, maintaining routines or facing a long task list can feel difficult.
-- **Anxiety and overwhelm:** when uncertainty, competing demands or too many steps make daily planning harder.
-- **ADHD and executive-function challenges:** when organizing, prioritizing, remembering or sustaining attention takes extra effort.
-- **OCD:** where product design must be especially careful not to reinforce compulsions, repeated checking or reassurance-seeking loops.
-- **Insomnia and sleep difficulties:** when creating a calming routine, managing sleep-related habits or adjusting to travel and time-zone changes can be challenging.
-- **Other experiences and conditions:** including sensory, cognitive, emotional or routine-related needs that call for more flexible and accessible interaction.
+## What is included in this repository
 
-These groups are an important part of the product's intended audience, not a claim that NORA diagnoses or treats any condition. The goal is supportive daily functionality — not clinical intervention.
+This public repository contains only the reduced demonstration and materials needed to explore it:
 
-## A look at the NORA experience
+- **Daily task list:** create, view, complete and remove tasks.
+- **Simple organization:** assign a category and due date to each task.
+- **Daily overview:** see the number of tasks and completed items for the current day.
+- **Focus timer:** start, pause, continue and reset a simple focus session.
+- **Local persistence:** save demo tasks in a local SQLite database.
+- **Automated tests:** exercise the demo API and its validation using a temporary test database.
+- **Continuous integration:** run the test suite on pushes and pull requests.
 
-The interface is designed to feel calm, approachable and flexible — with clear navigation, small-step planning and user-controlled assistant actions.
+### What is not included
 
-<p align="center">
-  <img src="docs/images/nora-desktop-preview.svg" alt="Illustrative NORA desktop dashboard preview" width="100%" />
-</p>
+The complete private NORA application is not part of this repository. This public demo does not include the private product source code, account system, production infrastructure, private integrations, AI assistant services, full mobile application, remote synchronization or real user data.
 
-<table>
-  <tr>
-    <td width="38%" valign="top">
-      <img src="docs/images/nora-mobile-preview.svg" alt="Illustrative NORA mobile dashboard preview" width="100%" />
-      <p align="center"><sub>Mobile experience</sub></p>
-    </td>
-    <td width="62%" valign="top">
-      <img src="docs/images/nora-assistant-preview.svg" alt="Illustrative NORA assistant with a user-confirmed planning proposal" width="100%" />
-      <p align="center"><sub>Assistant proposal with explicit confirmation</sub></p>
-    </td>
-  </tr>
-</table>
+The public demo is intentionally narrow. It should not be used as evidence that every planned NORA capability is implemented or production-ready.
 
-<sub>These are illustrative vector previews recreated from the project's interface references to make the product easier to explore. They are not live screenshots, a release build, or evidence of clinical validation. See the project documentation for implemented features and known limitations.</sub>
+## Explore the documentation
 
-## What supportive design means in NORA
+- [Care, inclusion and responsible support](docs/CARE-AND-INCLUSION.md)
+- [Public demo feature map](docs/FEATURES.md)
+- [Public demo architecture](docs/ARCHITECTURE.md)
+- [Quality, validation and limitations](docs/QUALITY-AND-LIMITATIONS.md)
+- [What is and is not open source](docs/OPEN-SOURCE-SCOPE.md)
+- [Development history of this public repository](docs/DEVELOPMENT-HISTORY.md)
+- [Publication safety checklist](docs/PUBLICATION-CHECKLIST.md)
+- [Contributing guide](CONTRIBUTING.md)
+- [Security policy](SECURITY.md)
 
-NORA's product direction is guided by a few principles:
+## Run the public demo
 
-- **Small steps instead of pressure.** Help make a task easier to start; do not shame someone for an unfinished list or a disrupted routine.
-- **Flexible routines.** A plan should adapt when energy, focus or circumstances change. A difficult day should not be treated as failure.
-- **Clear, calm interaction.** Reduce unnecessary clutter, offer readable information and provide accessible ways to navigate.
-- **User choice and control.** Suggestions, reminders, sharing and AI integrations should remain optional and understandable.
-- **Support without pretending to be treatment.** NORA can help structure a day or offer a supportive interaction; it must not present itself as a therapist, clinician or emergency service.
-- **Privacy by design.** Sensitive information must not be shared with external AI services or other people without clear, informed user action.
-
-For the product's inclusion principles and safety boundaries, see [Care, inclusion and responsible support](docs/CARE-AND-INCLUSION.md).
-
-## Product areas
-
-The main application has evolved around connected areas that support everyday life:
-
-- **Daily organization:** My Day, calendar, reminders, tasks, studies and work.
-- **Gentle planning and focus:** task prioritization, routine planning, focus sessions and the ability to approach work in smaller steps.
-- **Accessibility:** visual preferences, contrast and text options, simplified or guided interaction, responsive navigation and reduced-stimulation choices.
-- **Sleep and rest:** Nora Sleep sound library, personal playlists, sleep-related records and travel/time-zone support.
-- **Supportive interaction:** Nora Acolhe and user-controlled shared-support or communication concepts.
-- **AI-assisted planning:** optional Gemini-powered features with explicit permissions, temporary proposals and user review before a change is committed.
-- **Offline resilience:** protected local copies, password-based unlocking, queued changes, account checks and duplicate-prevention safeguards.
-- **Optional utilities:** medication organization and external search/comparison experiments. These are not clinical or prescribing features.
-
-The reviewed source snapshot contained 20 navigation areas, 21 JavaScript files and 24 Python test files. That inventory describes the reviewed code snapshot, not a guarantee that every area is production-ready. See the [feature map](docs/FEATURES.md).
-
-## What I build and work on
-
-I lead the NORA project and work across its product and engineering process: understanding user needs, shaping features, implementing functionality, integrating services, testing real flows, debugging and documenting changes.
-
-- **Backend:** Python, FastAPI, REST endpoints, validation and SQLite persistence.
-- **Frontend:** JavaScript, HTML, CSS and responsive interface development.
-- **Mobile prototype:** Java, Android Studio, Gradle and WebView integration.
-- **AI and external services:** optional Gemini and SerpAPI integrations, configured server-side.
-- **Reliability:** automated tests, migration and update scripts, offline synchronization safeguards, debugging and validation reports.
-- **Product experience:** accessibility, navigation, supportive language, sleep-related tools and everyday workflows.
-
-## Technology stack
-
-| Layer | Technologies |
-|---|---|
-| Backend | Python, FastAPI, REST APIs, Pydantic |
-| Frontend | JavaScript, HTML, CSS, responsive UI |
-| Data | SQLite, SQL, schema updates and migrations |
-| Android prototype | Java, Android Studio, Gradle, WebView |
-| Quality | Pytest, API tests, browser-based UI checks, regression tests |
-| Optional integrations | Google Gemini API, SerpAPI (server-side) |
-| Workflow | Git, GitHub, Markdown documentation |
-
-## Architecture at a glance
-
-The responsive web application and experimental Android client connect to a Python/FastAPI server. The server uses SQLite and may call optional external services, such as Gemini or SerpAPI, when configured and permitted.
-
-The Android prototype loads the NORA web experience from a configured server. The Python backend does **not** run inside the Android package. External integrations depend on server-side credentials, provider availability, quotas and user permissions.
-
-See [Architecture and technical boundaries](docs/ARCHITECTURE.md).
-
----
-
-## 🚀 Try the public demo
-
-This repository includes a **small, executable, self-contained demonstration** of selected NORA concepts. It lets reviewers run real code without exposing the private full application, user databases, API keys or sensitive records.
-
-The demo shows a simple daily task list and focus timer, using fictitious information. It is only a technical slice of the broader product idea: it does not yet implement condition-specific support, clinical functionality, the private account system, Gemini/SerpAPI calls, encrypted offline sync or the full Android client.
+The demo is designed for local evaluation with fictitious sample data. Python 3.10 or newer is recommended.
 
 ### Windows
 
-1. Download or clone this repository.
-2. Run INICIAR_DEMO_WINDOWS.bat.
-3. Open http://127.0.0.1:8000 in your browser.
+1. Clone or download this repository.
+2. Run `INICIAR_DEMO_WINDOWS.bat`.
+3. Open [http://127.0.0.1:8000](http://127.0.0.1:8000).
 
-### Run from a terminal
+### From a terminal
 
-Python 3.10+ is recommended.
+Create and activate a virtual environment, then run:
 
-    python -m venv .venv
-    python -m pip install -r requirements-dev.txt
-    python -m uvicorn demo.main:app --host 127.0.0.1 --port 8000
+```bash
+python -m venv .venv
+# Windows PowerShell:
+.venv\Scripts\Activate.ps1
+# macOS / Linux:
+# source .venv/bin/activate
 
-Open the app at http://127.0.0.1:8000 and the interactive API documentation at http://127.0.0.1:8000/docs.
+python -m pip install -r requirements-dev.txt
+python -m uvicorn demo.main:app --host 127.0.0.1 --port 8000
+```
 
-### Run tests
+Open [http://127.0.0.1:8000](http://127.0.0.1:8000). The interactive API documentation is available at [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs).
 
-    python -m pytest -q tests
+## Run the tests
 
-The GitHub Actions workflow runs the demo test suite on pushes and pull requests.
+```bash
+python -m pip install -r requirements-dev.txt
+python -m pytest -q tests
+```
 
-### Demo privacy note
+The tests use a temporary database. The GitHub Actions workflow also runs the test suite on pushes and pull requests.
 
-The demo has **no authentication** and is configured for local evaluation only. Do not expose it as a public internet service and do not enter real personal, account, medication or health information. Demo records are fictitious. The original NORA database, user data, .env and private server configuration are intentionally excluded.
+## Safety and privacy
 
-## Development milestones
+**This demo has no authentication and is for local evaluation only.**
 
-NORA has evolved through multiple development iterations. Version labels refer to development packages, not public app-store releases.
+- Keep it bound to `127.0.0.1`; do not expose it to the public internet or a shared network.
+- Use only the fictitious sample information. Do not enter real names, health details, medication information, account credentials or other personal data.
+- Do not add API keys, tokens, certificates, databases, backups, private logs or private application files to this repository.
+- The demo does not provide mental-health care, medical advice, crisis response, diagnosis or treatment.
 
-- **Core application:** responsive web interface, FastAPI backend, SQLite persistence and modular JavaScript features.
-- **Accessibility and navigation:** desktop/mobile navigation, adjustable interface preferences, guided interaction and reduced-stimulation options.
-- **Nora Sleep:** sound library and personal playlist work.
-- **AI-assisted planning:** optional Gemini connection, explicit permissions, temporary proposals and user confirmation before writing planning changes.
-- **Android prototype:** Java/WebView wrapper, Gradle configuration, emulator testing and server connectivity.
-- **Offline work:** protected local copies, password unlock, queued task/study changes, account ownership checks and duplicate-sync prevention.
-- **API usage controls:** internal Gemini/SerpAPI counters, local thresholds, cache and pause controls.
+See [SECURITY.md](SECURITY.md) and the [publication safety checklist](docs/PUBLICATION-CHECKLIST.md).
 
-See [development history](docs/DEVELOPMENT-HISTORY.md) and [quality, validation and limitations](docs/QUALITY-AND-LIMITATIONS.md).
+## Technology used in this demo
 
-## Current status and limitations
+| Area | Technology |
+|---|---|
+| Backend | Python, FastAPI, Pydantic |
+| Frontend | JavaScript, HTML, CSS |
+| Local data | SQLite |
+| Tests | Pytest, HTTPX |
+| CI | GitHub Actions |
 
-NORA is an evolving prototype, not a clinically validated product or a production-certified service.
+## Contributing
 
-- The Android client is experimental and has not been published to an app store.
-- The Android wrapper depends on the configured web server; it is not a standalone offline Android application.
-- Automated checks were run against development copies and simulated APIs. This is not an independent security audit.
-- Real Gemini/SerpAPI requests, provider billing, physical-device accessibility and final deployment require separate validation.
-- Push delivery depends on browser/device permissions, HTTPS, network and server availability; it is not a guaranteed reminder system.
-- NORA does not diagnose, treat, provide psychotherapy, recommend medication, monitor a person continuously or guarantee crisis intervention.
-- NORA must not be used as the sole support for a mental-health crisis, sleep disorder, medication decision or emergency.
+Contributions to the public demo, its tests and its documentation are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) before opening an issue or pull request. Keep changes within the public scope and never add code or materials from the private NORA application.
 
-The public demo is intentionally narrower than the complete private application. See [Quality and limitations](docs/QUALITY-AND-LIMITATIONS.md).
+## License and project boundaries
 
-## Repository map
+The files included in this public repository are released under the [MIT License](LICENSE). The license applies **only to the materials actually present in this repository**.
 
-    nora-personal-assistant/
-    ├── README.md
-    ├── demo/                         # Local, reduced FastAPI + SQLite demo
-    ├── tests/                        # Automated demo tests
-    ├── docs/                         # Product, inclusion and engineering documentation
-    ├── .github/workflows/tests.yml   # Automated test workflow
-    ├── requirements.txt
-    ├── requirements-dev.txt
-    └── INICIAR_DEMO_WINDOWS.bat
+It does not grant rights to the separate private NORA application, code, services, integrations, data, credentials or assets that are not included here. The NORA name, logo and other brand identifiers are not granted as trademarks by this license. See [the open-source scope document](docs/OPEN-SOURCE-SCOPE.md).
 
-**Project owner & developer: Arthur Guimarães**  
-[GitHub profile](https://github.com/ArthurGuimaraess) · [NORA repository](https://github.com/ArthurGuimaraess/nora-personal-assistant)
+---
+
+**Project owner and maintainer:** Arthur Guimarães  
+[GitHub profile](https://github.com/ArthurGuimaraess) · [NORA public repository](https://github.com/ArthurGuimaraess/nora-personal-assistant)
