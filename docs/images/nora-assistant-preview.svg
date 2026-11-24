@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+<title id="title">NORA assistant interface preview</title><desc id="desc">Illustrative NORA conversation showing a schedule proposal that requires the user's confirmation before being added.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fbfaff"/><stop offset="1" stop-color="#f4f0fb"/></linearGradient><filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#4b3b78" flood-opacity=".09"/></filter></defs>
+<rect width="1200" height="760" rx="28" fill="url(#bg)"/><rect width="228" height="760" rx="28" fill="#fff"/><path d="M228 0v760" stroke="#ebe6f4"/>
+<g font-family="Inter,Segoe UI,Arial,sans-serif">
+ <text x="34" y="62" font-size="34" font-weight="800" fill="#46366c">✳ nora<tspan fill="#a994dc">.</tspan></text><text x="36" y="118" font-size="11" font-weight="800" letter-spacing="2" fill="#aaa1bf">YOUR SPACE</text>
+ <rect x="20" y="272" width="188" height="48" rx="13" fill="#f0eafe"/><text x="42" y="302" font-size="17" fill="#7457ce">✧</text><text x="70" y="302" font-size="14" font-weight="700" fill="#7153ca">Talk to NORA</text>
+ <g fill="#756d8a" font-size="14"><text x="42" y="222">⌂</text><text x="70" y="222">My Day</text><text x="42" y="370">▦</text><text x="70" y="370">Calendar</text><text x="42" y="426">◷</text><text x="70" y="426">Sleep &amp; rest</text><text x="42" y="482">⚙</text><text x="70" y="482">Settings</text></g>
+ <rect x="228" y="0" width="972" height="76" fill="#fff"/><path d="M228 76h972" stroke="#ebe6f4"/><text x="270" y="46" font-size="14" font-weight="700" fill="#645b79">✳  Talk to NORA</text><circle cx="1137" cy="38" r="19" fill="#f0eafe"/><text x="1131" y="43" font-size="13" font-weight="700" fill="#7457ce">A</text>
+ <text x="274" y="129" font-size="11" font-weight="800" letter-spacing="2" fill="#8064d4">YOUR SUPPORTIVE ASSISTANT</text><text x="274" y="171" font-size="34" font-weight="800" fill="#28223b">Let's make a plan</text><text x="274" y="199" font-size="16" fill="#9189a3">You stay in control. NORA suggests; you decide.</text>
+ <rect x="300" y="227" width="850" height="488" rx="22" fill="#fff" filter="url(#shadow)"/>
+ <path d="M300 296h850" stroke="#eee9f5"/><circle cx="342" cy="261" r="19" fill="#f0eafe"/><text x="333" y="268" font-size="22" fill="#8064d4">✳</text><text x="373" y="258" font-size="15" font-weight="800" fill="#342d48">NORA · Routine assistant</text><text x="373" y="278" font-size="12" fill="#9289a4">Local mode · External AI is optional</text>
+ <rect x="340" y="324" width="430" height="67" rx="16" fill="#f4efff"/><text x="363" y="352" font-size="14" fill="#625481">Hi. What would make today feel</text><text x="363" y="374" font-size="14" fill="#625481">a little more manageable?</text>
+ <rect x="748" y="412" width="355" height="58" rx="16" fill="#7c60d0"/><text x="772" y="447" font-size="14" fill="#fff">I have a study task to organize.</text>
+ <rect x="340" y="490" width="520" height="64" rx="16" fill="#f4efff"/><text x="363" y="518" font-size="14" fill="#625481">We can break it into a short block</text><text x="363" y="540" font-size="14" fill="#625481">and leave room for a pause.</text>
+ <rect x="340" y="574" width="520" height="117" rx="17" fill="#fff" stroke="#d8c9fa" stroke-width="1.5"/>
+ <text x="365" y="604" font-size="11" font-weight="800" letter-spacing="1.2" fill="#8064d4">PROPOSAL · REVIEW BEFORE SAVING</text><text x="365" y="634" font-size="17" font-weight="800" fill="#342d48">Study session</text><text x="365" y="657" font-size="13" fill="#8c829f">20 minutes · Tomorrow at 9:00 AM</text>
+ <rect x="365" y="669" width="166" height="1" fill="#eee9f5"/>
+ <rect x="365" y="675" width="152" height="1" fill="#eee9f5"/>
+ <rect x="875" y="608" width="133" height="43" rx="12" fill="#7658ce"/><text x="897" y="635" font-size="13" font-weight="700" fill="#fff">✓  Confirm</text>
+ <rect x="1018" y="608" width="103" height="43" rx="12" fill="#fff" stroke="#e2dced"/><text x="1045" y="635" font-size="13" font-weight="700" fill="#6c6380">Cancel</text>
+ <text x="340" y="700" font-size="11" fill="#a198b1">Nothing is added to your calendar until you confirm.</text>
+</g></svg>
