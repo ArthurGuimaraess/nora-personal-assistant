@@ -4,7 +4,7 @@
 
 **Mental well-being · Neurodiversity · Sleep · Accessibility · Everyday routines**
 
-**Created and maintained by Arthur Guimarães**
+**A collaborative project by the NORA founding team**
 
 NORA is a project exploring calmer, more accessible ways to approach everyday tasks and routines. Its long-term product direction is informed by the experiences of people living with depression, anxiety, ADHD, OCD, insomnia and many other challenges — as well as anyone who benefits from flexible, supportive tools.
 
@@ -130,5 +130,5 @@ It does not grant rights to the separate private NORA application, code, service
 
 ---
 
-**Project owner and maintainer:** Arthur Guimarães  
+**NORA founding team**  
 [GitHub profile](https://github.com/ArthurGuimaraess) · [NORA public repository](https://github.com/ArthurGuimaraess/nora-personal-assistant)
