@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="1040" viewBox="0 0 480 1040" role="img" aria-labelledby="title desc">
+<title id="title">NORA mobile interface preview</title><desc id="desc">Illustrative mobile screen showing daily planning, gentle prompts, progress and bottom navigation.</desc>
+<defs><linearGradient id="hero" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a18be8"/><stop offset="1" stop-color="#7255c9"/></linearGradient><filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="7" stdDeviation="9" flood-color="#4b3b78" flood-opacity=".1"/></filter></defs>
+<rect width="480" height="1040" rx="34" fill="#f8f6fc"/>
+<g font-family="Inter,Segoe UI,Arial,sans-serif">
+ <rect x="0" y="0" width="480" height="84" rx="34" fill="#fff"/><path d="M0 84h480" stroke="#eee9f5"/>
+ <text x="28" y="50" font-size="19" font-weight="800" fill="#4c3a73">✳ nora<tspan fill="#a994dc">.</tspan></text><circle cx="433" cy="42" r="18" fill="#f0eafe"/><text x="427" y="47" font-size="14" font-weight="800" fill="#7658ce">A</text>
+ <text x="28" y="124" font-size="11" font-weight="800" letter-spacing="1.8" fill="#8266d5">A DAY AT A TIME</text>
+ <text x="28" y="165" font-size="29" font-weight="800" fill="#2d263f">Your day, your pace</text>
+ <text x="28" y="195" font-size="14" fill="#9189a3">A calmer place to start with one small step.</text>
+ <rect x="28" y="227" width="424" height="246" rx="23" fill="url(#hero)" filter="url(#shadow)"/>
+ <text x="57" y="270" font-size="11" font-weight="800" letter-spacing="1.2" fill="#fff">YOUR DAY, AT YOUR PACE</text>
+ <text x="57" y="322" font-size="28" font-weight="800" fill="#fff">Small steps.</text><text x="57" y="356" font-size="28" font-weight="800" fill="#fff">Meaningful progress.</text>
+ <text x="57" y="390" font-size="14" fill="#f1eaff">You don't have to do it all now.</text><text x="57" y="412" font-size="14" fill="#f1eaff">One thing at a time is enough.</text>
+ <g opacity=".23" stroke="#fff" stroke-width="10" stroke-linecap="round"><path d="M385 266l-40 105m40-105l44 101m-44-101l-5-70m5 70l55-23m-55 23l-61-18m61 18l-4 81"/></g>
+ <g>
+ <rect x="28" y="496" width="128" height="108" rx="17" fill="#fff" filter="url(#shadow)"/><text x="46" y="526" font-size="12" fill="#9189a3">Planned</text><text x="46" y="567" font-size="32" font-weight="800" fill="#302846">3</text><text x="46" y="586" font-size="11" fill="#9189a3">small steps</text>
+ <rect x="176" y="496" width="128" height="108" rx="17" fill="#fff" filter="url(#shadow)"/><text x="194" y="526" font-size="12" fill="#9189a3">Done</text><text x="194" y="567" font-size="32" font-weight="800" fill="#299b7b">1</text><text x="194" y="586" font-size="11" fill="#9189a3">completed</text>
+ <rect x="324" y="496" width="128" height="108" rx="17" fill="#fff" filter="url(#shadow)"/><text x="342" y="526" font-size="12" fill="#9189a3">Open</text><text x="342" y="567" font-size="32" font-weight="800" fill="#d28a57">2</text><text x="342" y="586" font-size="11" fill="#9189a3">for later</text>
+ </g>
+ <text x="28" y="651" font-size="18" font-weight="800" fill="#302846">A few things for today</text>
+ <rect x="28" y="673" width="424" height="125" rx="18" fill="#fff" filter="url(#shadow)"/>
+ <circle cx="60" cy="715" r="15" fill="#eee8fc"/><text x="55" y="721" font-size="16" fill="#7658ce">✓</text><text x="88" y="712" font-size="14" font-weight="700" fill="#342d48">Review one important task</text><text x="88" y="737" font-size="12" fill="#968da6">Personal · Flexible timing</text><path d="M48 763h382" stroke="#eeeaf4"/><circle cx="60" cy="780" r="14" fill="#e8f6f0"/><text x="55" y="785" font-size="14" fill="#319c7b">＋</text><text x="88" y="785" font-size="13" font-weight="700" fill="#342d48">Take a short break</text>
+ <rect x="28" y="820" width="424" height="126" rx="18" fill="#f4efff" stroke="#e8defd"/><text x="52" y="859" font-size="22" fill="#8568d1">✳</text><text x="52" y="888" font-size="16" font-weight="800" fill="#5d477f">A gentle reminder</text><text x="52" y="914" font-size="12" fill="#82759c">You can adjust your plans whenever you need.</text>
+ <rect x="0" y="962" width="480" height="78" fill="#fff"/><path d="M0 962h480" stroke="#eee9f5"/>
+ <g fill="#796f8f" font-size="11" text-anchor="middle"><text x="55" y="991" font-size="21">⌂</text><text x="55" y="1017">Today</text><text x="178" y="991" font-size="21">▦</text><text x="178" y="1017">Calendar</text><text x="302" y="991" font-size="21">✧</text><text x="302" y="1017">NORA</text><text x="424" y="991" font-size="21">⚙</text><text x="424" y="1017">Settings</text></g>
+ <g fill="#7658ce"><text x="55" y="991" font-size="21" text-anchor="middle">⌂</text><text x="55" y="1017" font-size="11" text-anchor="middle" font-weight="700">Today</text></g>
+</g></svg>
