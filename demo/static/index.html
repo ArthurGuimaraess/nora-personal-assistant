@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#7552cf">
+<meta name="description" content="NORA: demonstração local de apoio cotidiano, organização flexível e foco sem pressão.">
+<title>NORA Demo — Apoio cotidiano no seu ritmo</title>
+<link rel="stylesheet" href="/static/styles.css">
+<script src="/static/app.js" defer></script>
+</head>
+<body>
+<div class="shell">
+<aside class="sidebar" id="sidebar" aria-label="Menu principal">
+ <div class="brand"><span class="spark" aria-hidden="true">✳</span> nora<span class="dot">.</span><small>DEMONSTRAÇÃO</small></div>
+ <p class="eyebrow">SEU ESPAÇO</p>
+ <nav aria-label="Navegação">
+  <button class="nav-item active" data-view="today" aria-current="page"><span aria-hidden="true">⌂</span> Meu dia</button>
+  <button class="nav-item" data-view="agenda"><span aria-hidden="true">▦</span> Agenda</button>
+  <button class="nav-item" data-view="focus"><span aria-hidden="true">◉</span> Modo foco</button>
+  <button class="nav-item" data-view="about"><span aria-hidden="true">ⓘ</span> Sobre a demo</button>
+ </nav>
+ <div class="side-note">Um passo de cada vez.<br>Dados fictícios • sem login</div>
+</aside>
+<div class="overlay" id="overlay" hidden></div>
+<main class="main">
+<header class="topbar">
+ <button id="menu-toggle" class="icon-button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+ <span class="brand-mini">✳ nora<span>.</span></span>
+ <span class="prototype">DEMO LOCAL</span>
+</header>
+<div class="content">
+ <div class="intro">
+  <div>
+   <span class="eyebrow purple">APOIO COTIDIANO, NO SEU RITMO</span>
+   <h1 id="page-title">Meu dia</h1>
+   <p id="page-subtitle">Um espaço simples para organizar pequenas tarefas, respeitar seu ritmo e fazer pausas sem cobrança.</p>
+  </div>
+  <div class="date-chip" id="today-label"></div>
+ </div>
+ <section data-panel="today">
+  <div class="stats" aria-label="Resumo de hoje">
+   <div class="stat"><span>Para hoje</span><strong id="total">0</strong><small>tarefas programadas</small></div>
+   <div class="stat"><span>Concluídas</span><strong id="done">0</strong><small>passos finalizados</small></div>
+   <div class="stat accent"><span>Seu progresso</span><strong id="progress">0%</strong><small>um passo de cada vez ✨</small></div>
+  </div>
+  <div class="columns">
+   <section class="panel" aria-labelledby="today-tasks-title">
+    <div class="panel-head"><h2 id="today-tasks-title">Pequenos passos de hoje</h2><span class="pill">No seu ritmo</span></div>
+    <div id="today-tasks" class="task-list" aria-live="polite"></div>
+   </section>
+   <section class="panel panel-create" aria-labelledby="create-title">
+    <div class="panel-head"><h2 id="create-title">Adicionar tarefa</h2></div>
+    <form id="task-form">
+     <label for="title">Qual pequeno passo faria sentido para você?</label>
+     <input id="title" maxlength="120" required placeholder="Ex.: Separar o material por 5 minutos">
+     <label for="category">Categoria</label>
+     <select id="category">
+      <option value="pessoal">Pessoal</option>
+      <option value="estudos">Estudos</option>
+      <option value="rotina">Rotina</option>
+     </select>
+     <label for="due">Data</label>
+     <input type="date" id="due" required>
+     <button class="primary" type="submit">+ Adicionar pequeno passo</button>
+    </form>
+    <p class="hint">Sem cobrança para fazer tudo: ajuste sua lista quando precisar. Os dados ficam somente no banco local da demonstração.</p>
+   </section>
+  </div>
+ </section>
+ <section data-panel="agenda" hidden>
+  <div class="panel"><div class="panel-head"><h2>Suas tarefas</h2><span class="pill">Todas as datas</span></div><div id="all-tasks" class="task-list" aria-live="polite"></div></div>
+ </section>
+ <section data-panel="focus" hidden>
+  <div class="panel focus-box">
+   <span class="eyebrow purple">PAUSA COM INTENÇÃO</span>
+   <h2>Modo foco</h2>
+   <p>Um temporizador simples para experimentar um período de atenção ou uma pausa. Você pode parar quando quiser.</p>
+   <div class="timer" id="timer" role="timer" aria-label="Tempo restante">25:00</div>
+   <div class="controls">
+    <button class="primary" id="timer-toggle" type="button">Iniciar foco</button>
+    <button class="secondary" id="timer-reset" type="button">Reiniciar</button>
+   </div>
+   <p class="hint">O temporizador funciona nesta aba; notificações em segundo plano não fazem parte desta demo.</p>
+  </div>
+ </section>
+ <section data-panel="about" hidden>
+  <div class="panel about">
+   <h2>O propósito da NORA é maior que esta demonstração</h2>
+   <p>A NORA está sendo desenvolvida para tornar o cotidiano mais manejável e acessível, especialmente para pessoas que convivem com depressão, ansiedade, TDAH, TOC, insônia e outras dificuldades que afetam energia, atenção, sono ou rotina. A proposta é apoiar organização e autonomia, nunca diagnosticar ou tratar condições.</p>
+   <p>O aplicativo principal explora ferramentas de rotina, acessibilidade, foco, sono, interação acolhedora e assistência opcional por IA. Nem todas as ideias de suporte direcionadas a condições específicas estão implementadas.</p>
+   <p><strong>Importante:</strong> esta demo contém somente tarefas fictícias e um temporizador. Não implementa tratamento, terapia, avaliação clínica ou suporte de crise. A NORA não substitui profissionais de saúde.</p>
+   <p><strong>Privacidade:</strong> não há contas reais, dados de saúde, chaves, banco original ou integração Gemini. Execute somente localmente.</p>
+   <a href="/docs" target="_blank" rel="noopener">Explorar a documentação interativa da API ↗</a>
+  </div>
+ </section>
+ <footer>✳ Nora Demo • Project in active development • <a href="https://github.com/ArthurGuimaraess" rel="noopener" target="_blank">Arthur Guimarães</a></footer>
+</div>
+</main>
+</div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
